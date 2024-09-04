@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: url('kali-linux-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f1f1f1;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(28, 28, 28, 0.9); /* Semi-transparent dark background */
+}
+
+.chat-header {
+    background-color: #1b1b1b;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.chat-header h1 {
+    margin: 0;
+    color: #00aaff; /* Blue color for the header */
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+
+.right {
+    background-color: #0b93f6;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.left {
+    background-color: #e5e5ea;
+    color: black;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #1b1b1b;
+    border-top: 1px solid #444;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+.chat-footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chat-footer button:hover {
+    background-color: #0056b3;
+}
